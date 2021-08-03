@@ -20,14 +20,15 @@ const useStyles = makeStyles((theme) => ({
       fontSize:"1.25rem"
     },
     large: {
-      width: theme.spacing(15),
-      height: theme.spacing(15),
+      width: "160px",
+      height: "160px",
       marginBottom:theme.spacing(3),
       borderRadius:"50%",
       maxWidth:"100%",
       objectFit:"contain",
       backgroundColor:useInfo().colors.major
     },
+  
     icons:{
       marginTop:theme.spacing(3)
     },

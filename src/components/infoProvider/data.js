@@ -89,7 +89,7 @@ const data = {
             title:"Customized Website/Web App",
             image:"https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
             subheading:"web sites and web apps",
-            caption:"I will build any customized website or web app for you with industry standard technologies and programming languaes! You dream, and I make it a reality!",
+            caption:"I will build any customized website or web app for you with industry standard technologies and programming languages! You dream, and I make it a reality!",
             fiver:"https://www.fiverr.com/share/a06DyN"
         },
         {

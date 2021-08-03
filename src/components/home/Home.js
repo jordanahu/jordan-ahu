@@ -1,6 +1,6 @@
 import React from 'react';
 import useStyles from './useStyles';
-import {Avatar,Typography, Button} from '@material-ui/core';
+import {Typography, Button} from '@material-ui/core';
 import useInfo from "../customHooks/useInfo";
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
@@ -42,7 +42,9 @@ const Home = () => {
       <div className={classes.profile}>
            <div className={classes.toolbar}/>
            <div className={classes.toolbar}/>
-            <Avatar className={classes.large} alt={name} src={images.profile} />
+          
+            <img className={classes.large} alt={name} src={images.profile}/>
+              
             <Typography align="center" className={classes.name}>{name}</Typography>
             <Typography style={{fontWeight:"bold"}} variant="subtitle1" align="center" >
               <Bounce top cascade>{title}</Bounce></Typography>
