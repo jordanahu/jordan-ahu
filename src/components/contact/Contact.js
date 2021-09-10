@@ -21,7 +21,7 @@ const Schema = yup.object().shape({
     .email()
     ,
     message:yup.string()
-    .required("message is a required field")
+    .required("message is a required field!")
 });
 
 const Contact = () => {

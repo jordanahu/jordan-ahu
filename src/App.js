@@ -1,11 +1,23 @@
-import React, {useState} from 'react';
+import React, {useState,useLayoutEffect} from 'react';
 import './App.css';
 import {Home, About, Navbar, Skills, Projects, Contact, Services} from './components';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import useInfo from "./components/customHooks/useInfo"
 
 function App() {
   const [drawerState, setDrawerState] = useState({open:true, close:false})
+
+  const {name} = useInfo();
+  
+  function disableImageDownload(){
+    let images = [...document.querySelectorAll(`[alt*=${name.split(" ")[0]}]`)];
+    images.forEach(image=>image.addEventListener("contextmenu", e=>e.preventDefault()));
+    
+  }
+
+  useLayoutEffect(disableImageDownload);
+
 
 
   function handleDrawerState(event, open){

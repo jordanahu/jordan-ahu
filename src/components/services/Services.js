@@ -1,14 +1,17 @@
 import React from 'react'
 import useStyles from "./useStyles";
 import {Typography} from "@material-ui/core";
-import {Offers} from "../";
+import {Offer} from "../";
 import useInfo from "../customHooks/useInfo";
 
 const Services = () => {
 
     const classes = useStyles();
     const {services, images:{profile}} = useInfo();
+
     
+    
+
     return (
         <section className={classes.root}>
             <div className={classes.toolbar}/>
@@ -16,7 +19,7 @@ const Services = () => {
             <Typography paragraph className={classes.skillHeading} >My services</Typography>
             <div className={classes.services}>
                 {services.map(({title, subheading, image, caption, fiver}, index)=>(
-                    <Offers
+                    <Offer
                     title={title}
                     subheading={subheading}
                     avatar={profile}

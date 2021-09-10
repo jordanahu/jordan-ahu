@@ -4,10 +4,10 @@ import {Typography} from "@material-ui/core";
 import useInfo from "../customHooks/useInfo";
 import {ImHtmlFive} from "react-icons/im";
 import {FaSass} from "react-icons/fa";
-import {FaReact, FaNodeJs} from "react-icons/fa";
+import {FaReact,FaGitSquare, FaNodeJs} from "react-icons/fa";
 import {RiVuejsLine} from "react-icons/ri";
 import {BsBootstrapFill} from "react-icons/bs";
-import {SiJquery, SiJavascript,SiMaterialUi,
+import {SiJquery,SiRedux, SiJavascript,SiMaterialUi,SiTypescript,
     SiAdobephotoshop,SiPython, SiMongodb, SiFirebase} from "react-icons/si";
 import {GiRobotGolem} from "react-icons/gi";
 import { AiOutlineApi } from "react-icons/ai";
@@ -21,21 +21,25 @@ const Skills = () => {
     const {skills} = useInfo();
 
     const frontIcons =[<ImHtmlFive className={classes.icons}/>,
-                        <FaSass className={classes.icons}/>, 
-                         <SiJavascript className={classes.icons}/>,
+                          <FaSass className={classes.icons}/>, 
+                          <SiJavascript className={classes.icons}/>,
                           <FaReact className={classes.icons}/>,
-                         <RiVuejsLine className={classes.icons}/>,
-                         <BsBootstrapFill className={classes.icons}/>,
-                         <SiMaterialUi className={classes.icons}/>,
-                         <SiJquery className={classes.icons}/>,
-                          <SiAdobephotoshop className={classes.icons}/>]
+                          <RiVuejsLine className={classes.icons}/>,
+                          <BsBootstrapFill className={classes.icons}/>,
+                          <SiMaterialUi className={classes.icons}/>,
+                          <SiJquery className={classes.icons}/>,
+                          <SiAdobephotoshop className={classes.icons}/>,
+                          <SiTypescript className={classes.icons}/>,
+                          <SiRedux className={classes.icons}/>,
+                          ]
 
 const backIcons = [<SiPython className={classes.icons}/>,
                   <FaNodeJs className={classes.icons}/>,
                   <SiMongodb className={classes.icons}/>,
                    <GiRobotGolem className={classes.icons}/>,
                    <SiFirebase className={classes.icons}/>,
-                   <AiOutlineApi className={classes.icons}/>
+                   <AiOutlineApi className={classes.icons}/>,
+                   <FaGitSquare className={classes.icons}/>
                 ]
 
 

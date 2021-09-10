@@ -5,6 +5,8 @@ import tracker from "./images/tracker.png"
 import youtube from "./images/youtube.png"
 import jam_resume from "./downloads/jam_resume.pdf";
 import netflix from "./images/netflix.png";
+import codersNation from "./images/codersNation.png";
+
 
 let name = "JORDAN AHU"
 
@@ -56,6 +58,8 @@ const data = {
             {name:"MATERIAL-UI", progress:"60%", icon:"SiMaterialUi"},
             {name:"JQUERY", progress:"89%", icon:"SiJquery"},
             {name:"ADOBE PHOTOSHOP", progress:"85%", icon:"SiAdobephotoshop"},
+            {name:"TYPESCRIPT", progress:"80%", icon:"SiTypescript"},
+            {name:"REDUX", progress:"70%", icon:"SiRedux"},
 
         ],
 
@@ -65,8 +69,8 @@ const data = {
             {name:"MONGO-DB", progress:"75%"},
             {name:"WEB-SCRAPING", progress:"75%"},
             {name:"GOOGLE FIREBASE", progress:"77%"},
-            {name:"API DESIGN", progress:"70%"}
-
+            {name:"API DESIGN", progress:"70%"},
+            {name:"GIT AND GITHUB", progress:"75%", icon:"FaGitSquare"}
         ]
     },
     services:[
@@ -79,7 +83,7 @@ const data = {
         },
         {
             title:"Web Scraping",
-            image:"https://lh3.googleusercontent.com/proxy/rekwLaSCgzvB9kC3K6AWI1qpW26NxOvEb_Zf3Z2qOwvy9mFCVoTfgzyNtr3fPVE5-6QpfkXFyJY8yJcFUye3VMvapqh6jpBFel051SND0xo0Q8ynMg9OblvIusVXNSyBcoHFFJXFWpMSPQ2HDl_E",
+            image:"https://miro.medium.com/max/2000/1*f2-zeAOSNB4RGlqH9emTlQ.jpeg",
             subheading:"data mining",
             caption:"I will build a web crawling bot for you to search and track any information you need on the internet!",
             fiver:"https://www.fiverr.com/share/EEBz9y"
@@ -139,6 +143,13 @@ const data = {
             git:"https://github.com/jordanahu/netflix-clone",
             image:netflix,
             caption:"Built with Reactjs and plain CSS"
+        },
+        {
+            title:"Coders Nation",
+            demo:"https://coders-nation.web.app/",
+            git:"https://github.com/jordanahu/coders-nation",
+            image:codersNation,
+            caption:"This is a team work to create a platform for people of all kinds to learn computer programming."
         }
     ]
 }

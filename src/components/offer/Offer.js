@@ -11,10 +11,12 @@ import useInfo from "../customHooks/useInfo";
 import {Link} from "react-router-dom";
 import {Fade} from "react-reveal";
 
-export default function Offer({title, subheading, avatar, image, caption, link}) {
+export default function Offer({title, subheading, image, caption, link}) {
   const classes = useStyles();
   
+
   const {name} = useInfo();
+
 
   return (
       <Fade top cascade>
@@ -22,7 +24,7 @@ export default function Offer({title, subheading, avatar, image, caption, link})
       <CardHeader
           className={classes.header}
           avatar = {<Avatar 
-          alt={name} src={avatar} 
+          alt={name} src={image} 
           aria-label={name}
           className={classes.avatar}/>}
           
@@ -56,7 +58,7 @@ export default function Offer({title, subheading, avatar, image, caption, link})
         <Typography style={{margin:"0 5px"}}>Or</Typography>
          <Button 
          className={classes.header}
-        onClick={()=>window.open({link})}
+        onClick={()=>window.open(link)}
         aria-label="Fiverr"
           startIcon={<SiFiverr className={classes.icons} />}>
               Fiverr
