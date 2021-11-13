@@ -1,7 +1,6 @@
 import corona from "./images/corona.png";
 import profile from "./images/profile.png"
 import about from "./images/about.jpg";
-import tracker from "./images/tracker.png"
 import youtube from "./images/youtube.png"
 import jam_resume from "./downloads/jam_resume.pdf";
 import netflix from "./images/netflix.png";
@@ -32,7 +31,7 @@ const data = {
     yrsExp:2,
     phone:"+233-203-259-227",
     email:"ahujordan@yahoo.com",
-    title:"Full Stack Web Developer",
+    title:"Full Stack Software Developer",
     aboutText:`Hi, I'm a Full Stack Web Developer. I make ideas come to life by creating fantastic web apps and websites to meet the needs of my clients!
     I inculcate tried and tested software design principles such as MVC(MODEL-VIEW-CONTROLLER) and SOLID design patterns to develop robust software!
     
@@ -131,12 +130,7 @@ const data = {
             git:"https://github.com/jordanahu/youtube-clone/tree/master",
             image:youtube,
             caption:"Built with HTML, CSS and vanilla JavaScript!"},
-        {
-            title:"Exercise Tracker App",
-            demo:"https://jam-exercise-tracker.web.app/",
-            git:"https://github.com/jordanahu/jam-exercise-tracker-app",
-            image:tracker,
-            caption:"Built with Reactjs, Nodejs, MongoDB, Bootstrap and Expressjs"},
+        
         {
             title:"Netflix Clone",
             demo:"https://netflix-80d59.firebaseapp.com",
