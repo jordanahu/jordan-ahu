@@ -16,9 +16,8 @@ const Navbar = ({handleDrawerState, drawerState}) => {
     const classes = useStyles();
 
   return (
-    <Fade top>
+    
       <nav className={classes.root}>
-      
       <AppBar position="fixed">
         <Toolbar className={classes.toolbar}>
           <IconButton
@@ -35,7 +34,7 @@ const Navbar = ({handleDrawerState, drawerState}) => {
         handleDrawerState={handleDrawerState}
         drawerState={drawerState}/>
     </nav>
-    </Fade>
+
   );
 }
 
