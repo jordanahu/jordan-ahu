@@ -6,7 +6,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import {Bounce} from 'react-reveal';
 import {Link} from "react-router-dom";
 import {SideBar} from "../";
-import {Fade} from "react-reveal";
 import useInfo from "../customHooks/useInfo";
 
 const Navbar = ({handleDrawerState, drawerState}) => {
