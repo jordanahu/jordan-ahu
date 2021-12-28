@@ -28,7 +28,7 @@ const data = {
     year:"2021",
     footerAbout:`I am ${name.split(" ")[0]}  and this is my personal website. Contact me here.`,
     projects:10,
-    yrsExp:2,
+    yrsExp:3,
     phone:"+233-203-259-227",
     email:"ahujordan@yahoo.com",
     title:"Full Stack Software Developer",
