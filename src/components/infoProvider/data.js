@@ -5,6 +5,7 @@ import youtube from "./images/youtube.png"
 import jam_resume from "./downloads/jam_resume.pdf";
 import netflix from "./images/netflix.png";
 import codersNation from "./images/codersNation.png";
+import portfolio from "./images/portfolio.png";
 
 
 let name = "JORDAN AHU"
@@ -144,6 +145,13 @@ const data = {
             git:"https://github.com/jordanahu/coders-nation",
             image:codersNation,
             caption:"This is a team work to create a platform for people of all kinds to learn computer programming."
+        },
+        {
+            title:"My Personal Website",
+            demo:"https://jordan-ahu.web.app/",
+            git:"https://github.com/jordanahu/jordan-ahu",
+            image:portfolio,
+            caption:"Build with Reactjs, Material-UI and pure CSS for responsiveness."
         }
     ]
 }
