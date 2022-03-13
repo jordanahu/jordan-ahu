@@ -1,3 +1,14 @@
-# MY PERSONAL WEBSITE PORTFOLIO
+# jordan-ahu.web.app
 
-This is a project created by JORDAN AHU MAWULI!
+My personal portfolio website containing my
+past projects, services, skills and contact info
+
+## Development 
+
+The website is built with reactjs and material-ui
+
+## Running the project locally
+`npm run start`
+
+## To build the production version of the project:
+`npm run build`
