@@ -7,6 +7,9 @@ past projects, services, skills and contact info
 
 The website is built with reactjs and material-ui
 
+## Installing packages 
+`npm install`
+
 ## Running the project locally
 `npm run start`
 
