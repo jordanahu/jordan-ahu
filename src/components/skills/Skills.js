@@ -8,7 +8,7 @@ import {FaReact,FaGitSquare, FaNodeJs} from "react-icons/fa";
 import {RiVuejsLine} from "react-icons/ri";
 import {BsBootstrapFill} from "react-icons/bs";
 import {SiJquery,SiRedux, SiJavascript,SiTypescript,
-    SiAdobephotoshop,SiPython, SiMongodb,SiMaterialui, SiFirebase} from "react-icons/si";
+    SiAdobephotoshop,SiPython, SiMongodb,SiMaterialUi, SiFirebase} from "react-icons/si";
 import {GiRobotGolem} from "react-icons/gi";
 import { AiOutlineApi } from "react-icons/ai";
 import {List,ListItem,ListItemText,ListItemIcon } from '@material-ui/core';
@@ -27,7 +27,7 @@ const Skills = () => {
       <FaReact className={classes.icons} />,
       <RiVuejsLine className={classes.icons} />,
       <BsBootstrapFill className={classes.icons} />,
-      <SiMaterialui className={classes.icons} />,
+      <SiMaterialUi className={classes.icons} />,
       <SiJquery className={classes.icons} />,
       <SiAdobephotoshop className={classes.icons} />,
       <SiTypescript className={classes.icons} />,
