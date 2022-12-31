@@ -7,8 +7,8 @@ import {FaSass} from "react-icons/fa";
 import {FaReact,FaGitSquare, FaNodeJs} from "react-icons/fa";
 import {RiVuejsLine} from "react-icons/ri";
 import {BsBootstrapFill} from "react-icons/bs";
-import {SiJquery,SiRedux, SiJavascript,SiMaterialUi,SiTypescript,
-    SiAdobephotoshop,SiPython, SiMongodb, SiFirebase} from "react-icons/si";
+import {SiJquery,SiRedux, SiJavascript,SiTypescript,
+    SiAdobephotoshop,SiPython, SiMongodb,SiMaterialui, SiFirebase} from "react-icons/si";
 import {GiRobotGolem} from "react-icons/gi";
 import { AiOutlineApi } from "react-icons/ai";
 import {List,ListItem,ListItemText,ListItemIcon } from '@material-ui/core';
@@ -20,18 +20,19 @@ const Skills = () => {
     const classes = useStyles();
     const {skills} = useInfo();
 
-    const frontIcons =[<ImHtmlFive className={classes.icons}/>,
-                          <FaSass className={classes.icons}/>, 
-                          <SiJavascript className={classes.icons}/>,
-                          <FaReact className={classes.icons}/>,
-                          <RiVuejsLine className={classes.icons}/>,
-                          <BsBootstrapFill className={classes.icons}/>,
-                          <SiMaterialUi className={classes.icons}/>,
-                          <SiJquery className={classes.icons}/>,
-                          <SiAdobephotoshop className={classes.icons}/>,
-                          <SiTypescript className={classes.icons}/>,
-                          <SiRedux className={classes.icons}/>,
-                          ]
+    const frontIcons = [
+      <ImHtmlFive className={classes.icons} />,
+      <FaSass className={classes.icons} />,
+      <SiJavascript className={classes.icons} />,
+      <FaReact className={classes.icons} />,
+      <RiVuejsLine className={classes.icons} />,
+      <BsBootstrapFill className={classes.icons} />,
+      <SiMaterialui className={classes.icons} />,
+      <SiJquery className={classes.icons} />,
+      <SiAdobephotoshop className={classes.icons} />,
+      <SiTypescript className={classes.icons} />,
+      <SiRedux className={classes.icons} />,
+    ];
 
 const backIcons = [<SiPython className={classes.icons}/>,
                   <FaNodeJs className={classes.icons}/>,
