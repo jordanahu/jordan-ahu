@@ -1,9 +1,10 @@
 import React, {useState,useLayoutEffect} from 'react';
 import './App.css';
-import {Home, About, Navbar, Skills, Projects, Contact, Services} from './components';
+import { Navbar} from './components';
+import {Home, About, Skills, Projects, Contact, Services} from "pages";
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import useInfo from "./components/customHooks/useInfo"
+import { useInfo } from "common/Hooks";
 
 function App() {
   const [drawerState, setDrawerState] = useState({open:true, close:false})

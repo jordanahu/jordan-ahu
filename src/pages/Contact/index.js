@@ -9,8 +9,8 @@ import Input from "./input/Input";
 import Confetti from 'react-confetti'
 import {Typography,Paper, TextareaAutosize, Button} from "@material-ui/core"
 import {Fade} from "react-reveal";
-import {Footer} from "../";
-import axios from "../axios/axios";
+import {Footer} from "components";
+import axios from "lib/axios";
 
 
 const Schema = yup.object().shape({

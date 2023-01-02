@@ -7,7 +7,7 @@ import {Button,CardHeader,
 import ContactMailIcon from '@material-ui/icons/ContactMail';
 import useStyles from "./useStyles";
 import { SiFiverr } from "react-icons/si";
-import useInfo from "../customHooks/useInfo";
+import {useInfo} from "common/Hooks";
 import {Link} from "react-router-dom";
 import {Fade} from "react-reveal";
 

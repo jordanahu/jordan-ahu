@@ -1,5 +1,5 @@
 import {makeStyles} from "@material-ui/core/styles";
-import useInfo from "../customHooks/useInfo";
+import {useInfo} from "common/Hooks";
 
 
 

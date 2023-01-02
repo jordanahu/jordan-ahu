@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import {InfoProvider} from "./components/infoProvider/InfoProvider";
+import {InfoProvider} from "assets/infoProvider";
 
 ReactDOM.render(
   <React.StrictMode>
