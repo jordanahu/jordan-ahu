@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 import useStyles from "./useStyles";
-import {useInfo} from "common/Hooks";
+import { useInfo } from "common/Hooks";
 import { List, ListItem, ListItemText, ListItemIcon } from "@material-ui/core";
 import PersonIcon from "@material-ui/icons/Person";
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -9,6 +9,7 @@ import ContactMailIcon from "@material-ui/icons/ContactMail";
 import CardGiftcardIcon from "@material-ui/icons/CardGiftcard";
 import { BiSupport, BiMedal } from "react-icons/bi";
 import { Fade } from "react-reveal";
+import {MdOutlineCastForEducation} from "react-icons/md"
 
 const About = () => {
   const classes = useStyles();
@@ -38,6 +39,14 @@ const About = () => {
     { icon: <BiSupport />, primary: "Support", secondary: "Online 24/7" },
   ];
 
+  const educationInfo = [
+    {
+      icon:<MdOutlineCastForEducation/>,
+      primary:"UNIVERSITY OF CAPE COAST",
+      secondary:"BS. COMPUTER SCIENCE"
+    }
+  ]
+
   return (
     <section className={classes.root}>
       <div className={classes.toolbar} />
@@ -59,6 +68,7 @@ const About = () => {
           </Typography>
         </div>
         <div className={classes.info}>
+          {/* BASIC INFORMATION(CONTACT) */}
           <div className={classes.info_details}>
             <Typography paragraph className={classes.info_title}>
               Information
@@ -80,7 +90,31 @@ const About = () => {
               </List>
             </div>
           </div>
-
+          {/* EDUCATION */}
+          <div className={classes.info_details}>
+            <Typography paragraph className={classes.info_title}>
+              Education
+            </Typography>
+            <div className={classes.info_details_inner}>
+              <List>
+                {educationInfo.map(({ icon, primary, secondary }) => (
+                  <Fade top>
+                    <ListItem>
+                      <ListItemIcon className={classes.icons}>
+                        {icon}
+                      </ListItemIcon>
+                      <ListItemText
+                        className={classes.infoText}
+                        primary={primary}
+                        secondary={secondary}
+                      />
+                    </ListItem>
+                  </Fade>
+                ))}
+              </List>
+            </div>
+          </div>
+          {/* EXPERIENCE */}
           <div className={classes.info_details}>
             <Typography paragraph className={classes.info_title}>
               Experience and Support
