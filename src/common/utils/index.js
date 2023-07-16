@@ -9,16 +9,11 @@ async function sendEmail(templateParameter) {
         REACT_APP_PUBLIC_KEY: publicKey,
     } = process.env;
 
-    // await emailjs.send(serviceID,
-    //     templateID,
-    //     templateParameter,
-    //     publicKey);
-      
-    console.group("api keys");
-    console.log(process.env.REACT_APP_PUBLIC_KEY)
-    console.log(templateID)
-    console.log(publicKey)
-    console.groupEnd()
+    await emailjs.send(serviceID,
+        templateID,
+        templateParameter,
+        publicKey);
+
 }
 
 
