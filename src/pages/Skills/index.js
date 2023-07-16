@@ -24,9 +24,12 @@ import {
   SiMaterialui,
   SiFirebase,
   SiFigma,
+  SiSvelte,
+  SiNestjs,
+  SiExpress
 } from "react-icons/si";
 import {GiRobotGolem} from "react-icons/gi";
-import { AiOutlineApi } from "react-icons/ai";
+import { AiOutlineApi,AiOutlineConsoleSql } from "react-icons/ai";
 import {List,ListItem,ListItemText,ListItemIcon } from '@material-ui/core';
 
 import {Fade} from "react-reveal"
@@ -42,6 +45,7 @@ const Skills = () => {
       <SiJavascript className={classes.icons} />,
       <FaReact className={classes.icons} />,
       <SiAngular className={classes.icons} />,
+      <SiSvelte className={classes.icons} />,
       <RiVuejsLine className={classes.icons} />,
       <BsBootstrapFill className={classes.icons} />,
       <SiMaterialui className={classes.icons} />,
@@ -60,8 +64,10 @@ const backIcons = [
   <SiFirebase className={classes.icons} />,
   <AiOutlineApi className={classes.icons} />,
   <FaGitSquare className={classes.icons} />,
-  <FaGitSquare className={classes.icons} />,
   <FaDocker className={classes.icons} />,
+  <AiOutlineConsoleSql className={classes.icons} />,
+  <SiNestjs className={classes.icons} />,
+  <SiExpress className={classes.icons} />,
 ];
 
 

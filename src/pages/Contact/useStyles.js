@@ -56,7 +56,7 @@ const useStyles = makeStyles((theme) => ({
       '&:hover':{
         backgroundColor:useInfo().colors.buttonColor
       }
-    }
+    },
  
   
     

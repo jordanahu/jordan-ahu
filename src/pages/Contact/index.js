@@ -10,7 +10,10 @@ import Confetti from 'react-confetti'
 import {Typography,Paper, TextareaAutosize, Button} from "@material-ui/core"
 import {Fade} from "react-reveal";
 import {Footer} from "components";
-import axios from "lib/axios";
+import {sendEmail} from "../../common/utils";
+import { Oval } from 'react-loader-spinner';
+import { useInfo } from "common/Hooks";
+
 
 
 const Schema = yup.object().shape({
@@ -27,34 +30,46 @@ const Schema = yup.object().shape({
 const Contact = () => {
     const classes = useStyles();
     const [success, setSuccess] = useState(false);
+    const [loading, setLoading] = useState(false);
+
+
+    const colors = useInfo().colors;
     const history = useHistory();
     const {handleSubmit, formState:{errors}, control } = useForm({
         mode:"onChange",
         resolver:yupResolver(Schema)
     })
     
-    const submitInfo = data =>{
+    const submitInfo = async (data) =>{
 
-        let {message, email,username} = data
+        let {message, email:from,username:name} = data;
+        let templateParameters = {name, message, from, to:process.env.REACT_APP_EMAIL}
        
-        axios.post("/contact",{
-          message,
-          email,
-          username
-        })
-        .catch((err) => console.log(`Error from seding message:${err.message}`));
+        try{
+            setLoading(true);
 
-        Swal.fire({
-            title: "Message Sent!",
-            text: `Thank you, ${data.username}, for messaging me!`,
-            icon: "success",
-            
-          }).then(({isConfirmed})=>{
-                isConfirmed && history.push("/")
-          })
-         
-          setSuccess(true)
-          
+            await sendEmail(templateParameters);
+            setLoading(false);
+            setSuccess(true)
+
+            Swal.fire({
+                title: "Message Sent!",
+                text: `Thank you, ${data.username}, for messaging me!`,
+                icon: "success",
+                
+              }).then(({isConfirmed})=>{
+                    isConfirmed && history.push("/")
+              })
+        }catch(err){
+            setLoading(false);
+              Swal.fire({
+                  title: "Message Sent!",
+                  text: `Message not sent. Try again!`,
+                  icon: "error",
+                  
+                })
+
+          }
         
         
     }
@@ -105,7 +120,31 @@ const Contact = () => {
                     (<span className={classes.errorMsg}>
                         {errors?.message?.message}!
                     </span>)}
-                <Button type="submit" fullWidth className={classes.send}>Send</Button>
+                    {
+                        loading
+                      ?
+                      <div
+                        style={{
+                          marginTop: "1rem",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+
+                        <Oval
+                          ariaLabel="loading-indicator"
+                          height={30}
+                          width={30}
+                          strokeWidth={5}
+                          color={colors.buttonColor}
+                          secondaryColor="rgba(204, 75, 44, 0.3)"
+                        />
+                      </div>
+                      :
+                      <Button type="submit" fullWidth className={classes.send}>Send</Button>
+
+                    }
             </form>
             </Paper>
             <Footer/>
