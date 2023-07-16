@@ -1,12 +1,11 @@
 import corona from "./images/corona.png";
 import profile from "./images/profile.jpg"
 import about from "./images/about.jpg";
-import youtube from "./images/youtube.png"
 import jam_resume from "./downloads/jam_resume.pdf";
-import netflix from "./images/netflix.png";
 import codersNation from "./images/codersNation.png";
-import portfolio from "./images/portfolio.png";
-
+import jordanPortfolio from "./images/portfolio.png";
+import cssGenerator from "./images/css-generator.png";
+import maryamPortfolio from "./images/maryam.png"
 
 let name = "JORDAN AHU"
 
@@ -44,7 +43,7 @@ const data = {
       "https://www.linkedin.com/in/jordan-a-700399144/",
       "https://www.instagram.com/ahujord/",
       "https://github.com/jordanahu",
-      "https://twitter.com/jordan_ahu",
+      "https://twitter.com/JAM78365794",
       "https://t.me/ahujord",
     ],
   },
@@ -55,10 +54,10 @@ const data = {
       { name: "JAVASCRIPT", progress: "85%", icon: "SiJavascript" },
       { name: "REACTJS", progress: "85%", icon: "FaReact" },
       { name: "ANGULAR", progress: "75%", icon: "SiAngular" },
+      { name: "SVELTE", progress: "75%", icon: "SiSvelte" },
       { name: "VUEJS", progress: "80%", icon: "RiVuejsLine" },
       { name: "BOOTSTRAP", progress: "90%", icon: "BsBootstrapFill" },
       { name: "MATERIAL-UI", progress: "90%", icon: "SiMaterialUi" },
-      { name: "JQUERY", progress: "89%", icon: "SiJquery" },
       { name: "ADOBE PHOTOSHOP", progress: "75%", icon: "SiAdobephotoshop" },
       { name: "TYPESCRIPT", progress: "80%", icon: "SiTypescript" },
       { name: "REDUX", progress: "70%", icon: "SiRedux" },
@@ -74,7 +73,9 @@ const data = {
       { name: "API DESIGN", progress: "70%" },
       { name: "GIT AND GITHUB", progress: "80%", icon: "FaGitSquare" },
       { name: "DOCKER", progress: "60%", icon: "FaDocker" },
-      { name: "JAVA", progress: "70%", icon: "SiJava" },
+      { name: "SQL", progress: "60%", icon: "AiOutlineConsoleSql" },
+      { name: "NESTJS", progress: "85%" },
+      { name: "EXPRESSJS", progress: "85%" },
     ],
   },
   services: [
@@ -129,6 +130,13 @@ const data = {
   ],
   projectsInfo: [
     {
+      title: "CSS Code Generator",
+      demo: "https://css-code-generator.web.app",
+      git: "https://github.com/jordanahu/css-generator",
+      image: cssGenerator,
+      caption: "Built with Reactjs and Material UI",
+    },
+    {
       title: "Live Covid-19 Update",
       demo: "https://covid-19-live-update-b794d.web.app/",
       git: "https://github.com/jordanahu/live-corona-update",
@@ -136,19 +144,11 @@ const data = {
       caption: "Created using Reactjs and Material-Ui Design",
     },
     {
-      title: "Youtube Clone",
-      demo: "https://jamtube.netlify.app/",
-      git: "https://github.com/jordanahu/youtube-clone/tree/master",
-      image: youtube,
-      caption: "Built with HTML, CSS and vanilla JavaScript!",
-    },
-
-    {
-      title: "Netflix Clone",
-      demo: "https://netflix-80d59.firebaseapp.com",
-      git: "https://github.com/jordanahu/netflix-clone",
-      image: netflix,
-      caption: "Built with Reactjs and plain CSS",
+      title: "Website Portfolio",
+      demo: "https://maryam-naimabadi.web.app/",
+      git: "https://github.com/jordanahu/maryam",
+      image: maryamPortfolio,
+      caption: "Built with Reactjs and Material UI",
     },
     {
       title: "Coders Nation",
@@ -162,7 +162,7 @@ const data = {
       title: "My Personal Website",
       demo: "https://jordan-ahu.web.app/",
       git: "https://github.com/jordanahu/jordan-ahu",
-      image: portfolio,
+      image: jordanPortfolio,
       caption:
         "Build with Reactjs, Material-UI and pure CSS for responsiveness.",
     },
