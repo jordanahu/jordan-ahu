@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(3),
     borderRadius: "50%",
     maxWidth: "100%",
-    objectFit: "contain",
+    objectFit: "cover",
     backgroundColor: useInfo().colors.major,
   },
 

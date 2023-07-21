@@ -8,9 +8,12 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexDirection: "column",
+    width: "70%",
+    maxWith: "100%",
   },
   skillsContainer: {
     display: "flex",
+    width: "100%",
     flexWrap: "wrap",
   },
   skillSection: {
