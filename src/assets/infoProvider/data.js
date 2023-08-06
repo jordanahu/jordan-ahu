@@ -152,7 +152,7 @@ const data = {
     },
     {
       title: "Coders Nation",
-      demo: "https://coders-nation.web.app/",
+      demo: "https://the-coders-nation.web.app/",
       git: "https://github.com/jordanahu/coders-nation",
       image: codersNation,
       caption:
